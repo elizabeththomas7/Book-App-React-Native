@@ -2,5 +2,5 @@
 First look at Book app with React Native using Google Books API.
 
 
-<img src="Demo1.gif" width="40" height="40" />
+<img src="Demo1.gif" width="400" height="400" />
 
