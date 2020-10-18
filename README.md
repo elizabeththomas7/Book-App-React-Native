@@ -1,5 +1,6 @@
 # Book-App-React-Native
 First look at Book app with React Native using Google Books API.
 
-[![Demo Book App](Demo1.gif){:height="36px" width="36px"}]
+
+<img src="Demo1.gif" width="40" height="40" />
 
