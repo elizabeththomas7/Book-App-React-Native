@@ -1,21 +1,58 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React,{useState,useEffect} from 'react';
+import {  StyleSheet, View ,ScrollView} from 'react-native';
+import Home from './screens/Home';
+
+import HomeStack from './routes/HomeStack';
 
 export default function App() {
+
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+      
+     <HomeStack/>
+    </View >
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    backgroundColor: 'yellow'
+  },
+  header: {
+    padding: 28,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    
+  },
+  boldText: {
+    fontWeight:'bold',
+  },
+  body:{
+    backgroundColor:'yellow',
+    padding:20,
+    fontWeight:'bold',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  buttonContainer:{
+margin:20
+  },
+  button:{
+    flexDirection: 'row',
     justifyContent: 'center',
   },
+  thumbnail: {
+    height: 190,
+    width: 120,
+    margin: 5,
+    
+},
+bookList:{
+  flexDirection: 'row',
+}
+
+
 });
