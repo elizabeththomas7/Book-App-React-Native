@@ -10,7 +10,7 @@ const Home = ({navigation}) => {
   const[data,setData]=useState([]);
   
   useEffect(() => {
-    fetch('https://www.googleapis.com/books/v1/volumes?q=react&key=AIzaSyB_4Md7kWD1KhPmk8hfjRDSc3Zj-3v88GE')
+    fetch('https://www.googleapis.com/books/v1/volumes?q=react&key={key}')
     .then((res)=>res.json())
     .then((json)=>setData(json.items))
     .catch((err)=>console.log(err))
